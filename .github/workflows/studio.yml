@@ -1,0 +1,26 @@
+
+name: MANOJ STUDIO CLOUD
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  studio-engine:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get Studio Files
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate Studio Config
+        run: |
+          python -c "import json; c=json.load(open('config.json')); print('MANOJ STUDIO CLOUD READY'); print('Studio:', c['studio_name']); print('Mode:', c['mode']); print('Language:', c['language'])"
+          
