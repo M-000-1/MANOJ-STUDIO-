@@ -1,1 +1,42 @@
 
+{
+  "studio_name": "MANOJ STUDIO",
+  "version": "1.0.0",
+  "mode": "cloud",
+  "language": "Hindi",
+  "timezone": "Asia/Kolkata",
+
+  "ai_settings": {
+    "content_research": true,
+    "trending_topics": true,
+    "shayari_generation": true,
+    "caption_generation": true,
+    "hashtag_generation": true,
+    "video_ideas": true
+  },
+
+  "video_settings": {
+    "platform": "Instagram",
+    "format": "Reels",
+    "aspect_ratio": "9:16",
+    "quality": "1080p",
+    "subtitles": true,
+    "voiceover": true
+  },
+
+  "branding": {
+    "name": "Roaring Thoughts",
+    "signature": "@cm___manoj"
+  },
+
+  "automation": {
+    "cloud_enabled": true,
+    "approval_required": true,
+    "auto_publish": false
+  },
+
+  "security": {
+    "store_api_keys_in_github_secrets": true,
+    "public_credentials": false
+  }
+}
